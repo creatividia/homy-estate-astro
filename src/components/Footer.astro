@@ -1,0 +1,28 @@
+---
+import content from '@data/content.json'
+const cols: Array<{ title: string; links: Array<{ label: string; href: string }> }> = content.footer.columns
+---
+<footer class="bg-surface border-t border-border">
+  <div class="container py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <div>
+      <a href="/" class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-lg bg-primary"></div>
+        <span class="font-display text-xl">HomyEstate</span>
+      </a>
+      <p class="mt-3 text-sm text-muted">{content.footer.about}</p>
+    </div>
+    {cols.map((col) => (
+      <div>
+        <div class="font-semibold">{col.title}</div>
+        <ul class="mt-3 space-y-2">
+          {col.links.map((l) => (
+            <li><a href={l.href} class="text-sm text-muted hover:text-primary">{l.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+  <div class="border-t border-border">
+    <div class="container py-6 text-xs text-muted">{content.footer.copyright}</div>
+  </div>
+</footer>

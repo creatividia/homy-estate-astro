@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+}
+
+.container {
+  @apply mx-auto max-w-[1600px] px-6 sm:px-8 lg:px-16;
+}
+
+.card {
+  @apply bg-surface rounded-2xl border border-border shadow-inset;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors;
+}
+
+.btn-primary {
+  @apply btn bg-primary text-white hover:opacity-90;
+}
+
+.btn-ghost {
+  @apply btn bg-transparent text-text border border-border hover:bg-surface;
+}

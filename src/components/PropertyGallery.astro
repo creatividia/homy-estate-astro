@@ -1,0 +1,17 @@
+---
+const { images } = Astro.props as { images: string[] }
+---
+<div class="card overflow-hidden">
+  <div class="aspect-w-16 aspect-h-9 bg-bg">
+    <img src={images[0]} alt="Property image" class="h-full w-full object-cover" />
+  </div>
+  {images.length > 1 && (
+    <div class="p-4 grid grid-cols-3 gap-3">
+      {images.slice(1, 4).map((src) => (
+        <div class="aspect-w-16 aspect-h-9 bg-bg rounded-xl overflow-hidden border border-border">
+          <img src={src} alt="Gallery image" class="h-full w-full object-cover" />
+        </div>
+      ))}
+    </div>
+  )}
+</div>

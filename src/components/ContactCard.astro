@@ -1,0 +1,16 @@
+---
+const { label, value, icon } = Astro.props as { label: string; value: string; icon?: string }
+---
+<div class="card p-6 flex items-center gap-4">
+  <div class="h-12 w-12 rounded-full border border-border flex items-center justify-center">
+    {icon ? (
+      <img src={icon} alt="" class="h-6 w-6" />
+    ) : (
+      <div class="h-3 w-3 rounded-full bg-primary"></div>
+    )}
+  </div>
+  <div>
+    <div class="text-sm text-muted">{label}</div>
+    <div class="font-semibold">{value}</div>
+  </div>
+</div>

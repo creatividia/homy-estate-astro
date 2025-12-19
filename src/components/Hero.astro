@@ -1,0 +1,38 @@
+--- 
+import content from '@data/content.json'
+const data: { heading: string; subheading: string; socialProof: string; image?: string; alt?: string } = content.hero
+--- 
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0">
+    {data.image && (
+      <img src={data.image} alt={data.alt ?? 'Real estate hero image'} class="h-full w-full object-cover" />
+    )}
+    <div class="h-full w-full bg-gradient-to-b from-black/70 via-black/40 to-black/30"></div>
+  </div>
+  <div class="container relative py-20 sm:py-28">
+    <div class="max-w-2xl">
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">{data.heading}</h1>
+      <p class="mt-4 max-w-xl inline-block rounded-lg bg-black/45 backdrop-blur-sm px-3 py-2 text-white">{data.subheading}</p>
+      <div class="mt-8 card p-4">
+        <form class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <input class="w-full rounded-xl bg-bg border border-border px-4 py-3" placeholder="Location" />
+          <select class="w-full rounded-xl bg-bg border border-border px-4 py-3">
+            <option>Property Type</option>
+          </select>
+          <select class="w-full rounded-xl bg-bg border border-border px-4 py-3">
+            <option>Budget</option>
+          </select>
+          <button type="button" class="btn-primary">Search</button>
+        </form>
+      </div>
+      <div class="mt-8 flex items-center gap-6">
+        <div class="flex -space-x-2">
+          <div class="h-8 w-8 rounded-full bg-primary"></div>
+          <div class="h-8 w-8 rounded-full bg-primary/80"></div>
+          <div class="h-8 w-8 rounded-full bg-primary/60"></div>
+        </div>
+        <span class="text-sm rounded-lg bg-black/45 backdrop-blur-sm px-3 py-1 text-white">{data.socialProof}</span>
+      </div>
+    </div>
+  </div>
+</section>

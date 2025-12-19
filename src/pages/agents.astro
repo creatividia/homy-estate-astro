@@ -1,0 +1,21 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import NavBar from '@components/NavBar.astro'
+import PageHeader from '@components/PageHeader.astro'
+import AgentCard from '@components/AgentCard.astro'
+import Footer from '@components/Footer.astro'
+import content from '@data/content.json'
+const agents: Array<{ name: string; role: string; rating: number; phone: string; email: string; avatar: string }> = content.agents
+---
+<BaseLayout title="Agents">
+  <NavBar />
+  <PageHeader title="Agents" subtitle="Meet trusted local professionals ready to help" />
+  <section class="container py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {agents.map((a) => (
+        <AgentCard agent={a} />
+      ))}
+    </div>
+  </section>
+  <Footer />
+</BaseLayout>

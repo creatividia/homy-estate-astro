@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "links": [
+      { "label": "Home", "href": "/" },
+      { "label": "Properties", "href": "/properties" },
+      { "label": "Agents", "href": "/agents" },
+      { "label": "FAQ", "href": "/faq" },
+      { "label": "About", "href": "/about" },
+      { "label": "Contact", "href": "/contact" }
+    ]
+  },
+  "hero": {
+    "heading": "Find your dream home",
+    "subheading": "Discover curated listings from trusted agents across the city",
+    "socialProof": "Trusted by 5,000+ buyers and renters",
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1600&auto=format&fit=crop",
+    "alt": "Bright modern living room with large windows"
+  },
+  "features": [
+    {
+      "title": "Verified Listings",
+      "description": "Every property is vetted for accuracy and legitimacy"
+    },
+    {
+      "title": "Trusted Agents",
+      "description": "Work with experienced local professionals"
+    },
+    {
+      "title": "Smart Search",
+      "description": "Filter by price, type, and neighborhood"
+    }
+  ],
+  "properties": [
+    {
+      "slug": "modern-family-house",
+      "title": "Modern Family House",
+      "location": "Jakarta, Indonesia",
+      "price": "$580,000",
+      "beds": 4,
+      "baths": 3,
+      "area": 220,
+      "image": "https://images.unsplash.com/photo-1600585154340-0d9b3c63ec0c?q=80&w=1200&auto=format&fit=crop",
+      "description": "Spacious modern house with open-plan living, natural light, and private garden.",
+      "amenities": ["Garage", "Backyard", "Air Conditioning", "Security"],
+      "gallery": [
+        "https://images.unsplash.com/photo-1600585154340-0d9b3c63ec0c?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1600585153820-9f4f9b72f0ee?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1600585154485-87c2434e1848?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "slug": "urban-apartment",
+      "title": "Urban Apartment",
+      "location": "Bandung, Indonesia",
+      "price": "$320,000",
+      "beds": 2,
+      "baths": 2,
+      "area": 95,
+      "image": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=1200&auto=format&fit=crop",
+      "description": "Stylish apartment in the heart of the city with skyline views.",
+      "amenities": ["Elevator", "Gym", "24/7 Security"],
+      "gallery": [
+        "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    {
+      "slug": "coastal-villa",
+      "title": "Coastal Villa",
+      "location": "Bali, Indonesia",
+      "price": "$1,250,000",
+      "beds": 5,
+      "baths": 4,
+      "area": 350,
+      "image": "https://images.unsplash.com/photo-1586105251261-72a756497a11?q=80&w=1200&auto=format&fit=crop",
+      "description": "Luxury villa with ocean views, infinity pool, and modern finishes.",
+      "amenities": ["Pool", "Ocean View", "Smart Home", "Private Parking"],
+      "gallery": [
+        "https://images.unsplash.com/photo-1586105251261-72a756497a11?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1505692794403-34d4982f84c3?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1502005229762-cf1b2da7c52f?q=80&w=1200&auto=format&fit=crop"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Aulia",
+      "role": "Homeowner",
+      "quote": "The search experience was smooth and we found the perfect home in two weeks"
+    },
+    {
+      "name": "Rama",
+      "role": "Investor",
+      "quote": "Great selection of verified listings and helpful agents"
+    },
+    {
+      "name": "Nadia",
+      "role": "Renter",
+      "quote": "Flexible filtering made it easy to find a place within my budget"
+    }
+  ],
+  "cta": {
+    "title": "Ready to explore?",
+    "subtitle": "Start browsing properties curated for you"
+  },
+  "footer": {
+    "about": "A modern real estate marketplace helping you move with confidence",
+    "columns": [
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About", "href": "/about" },
+          { "label": "FAQ", "href": "/faq" },
+          { "label": "Press", "href": "#" }
+        ]
+      },
+      {
+        "title": "Explore",
+        "links": [
+          { "label": "Properties", "href": "/properties" },
+          { "label": "Agents", "href": "/agents" },
+          { "label": "Commercial", "href": "#" }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          { "label": "Help Center", "href": "#" },
+          { "label": "Safety", "href": "#" },
+          { "label": "Contact", "href": "/contact" }
+        ]
+      }
+    ],
+    "copyright": "© 2025 HomyEstate. All rights reserved."
+  }
+  ,
+  "agents": [
+    {
+      "name": "Dewi Kartika",
+      "role": "Senior Agent",
+      "rating": 4.9,
+      "phone": "+62 812-1234-5678",
+      "email": "dewi@homyestate.com",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop"
+    },
+    {
+      "name": "Budi Santoso",
+      "role": "Investment Advisor",
+      "rating": 4.8,
+      "phone": "+62 813-2345-6789",
+      "email": "budi@homyestate.com",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop"
+    },
+    {
+      "name": "Sari Wulandari",
+      "role": "Leasing Specialist",
+      "rating": 4.7,
+      "phone": "+62 811-9876-5432",
+      "email": "sari@homyestate.com",
+      "avatar": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I schedule a property viewing?",
+      "answer": "Choose a property and click Contact to request a viewing. Our agent will coordinate a suitable time."
+    },
+    {
+      "question": "Are listings verified?",
+      "answer": "Yes, all listings are reviewed for accuracy and legitimacy before publishing."
+    },
+    {
+      "question": "Do you offer financing guidance?",
+      "answer": "We can introduce you to trusted financing partners and help prepare documentation."
+    }
+  ],
+  "about": {
+    "title": "About HomyEstate",
+    "subtitle": "A modern real estate platform built for trust and clarity",
+    "description": "We combine verified listings, professional agents, and intuitive tools so you can buy, rent, or invest with confidence.",
+    "highlights": [
+      { "title": "Verified Listings", "description": "Quality and accuracy first" },
+      { "title": "Expert Agents", "description": "Local knowledge, national reach" },
+      { "title": "Clear Process", "description": "Transparent steps from search to close" }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help you move forward",
+    "address": "Jl. Jendral Sudirman No.10, Jakarta, Indonesia",
+    "phone": "+62 21 555 1234",
+    "email": "hello@homyestate.com"
+  }
+}

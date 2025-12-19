@@ -1,0 +1,71 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import NavBar from '@components/NavBar.astro'
+import PageHeader from '@components/PageHeader.astro'
+import ContactCard from '@components/ContactCard.astro'
+import Footer from '@components/Footer.astro'
+import content from '@data/content.json'
+const contact: { title: string; subtitle: string; address: string; phone: string; email: string } = content.contact
+---
+<BaseLayout title="Contact">
+  <NavBar />
+  <PageHeader title={contact.title} subtitle={contact.subtitle} />
+
+  <section class="container py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <ContactCard label="Email" value={contact.email} />
+      <ContactCard label="Phone" value={contact.phone} />
+      <ContactCard label="Address" value={contact.address} />
+    </div>
+  </section>
+
+  <section class="container pb-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+    <div>
+      <div class="card p-6">
+        <h2 class="font-display text-2xl">Let's Connect</h2>
+        <p class="mt-2 text-muted">We're excited to learn about your real estate goals. Use the form to get in touch and we'll respond promptly.</p>
+      </div>
+      <div class="card mt-6 p-6">
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input class="rounded-xl bg-bg border border-border px-4 py-3" placeholder="Full Name" />
+          <input class="rounded-xl bg-bg border border-border px-4 py-3" placeholder="Email" />
+          <input class="rounded-xl bg-bg border border-border px-4 py-3" placeholder="Phone" />
+          <input class="rounded-xl bg-bg border border-border px-4 py-3" placeholder="Subject" />
+          <textarea class="md:col-span-2 rounded-xl bg-bg border border-border px-4 py-3" rows="6" placeholder="Your message"></textarea>
+          <div class="md:col-span-2 flex items-center justify-between">
+            <label class="flex items-center gap-2 text-sm text-muted">
+              <input type="checkbox" class="rounded border-border bg-bg" />
+              Subscribe to updates
+            </label>
+            <button type="button" class="btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+      <div class="card p-6">
+        <h2 class="font-display text-2xl">Discover Our Office Locations</h2>
+        <p class="mt-2 text-muted">We have offices conveniently located to serve your needs.</p>
+        <div class="mt-4 rounded-2xl bg-surface border border-border p-2 grid grid-cols-3 gap-2">
+          <button class="btn-ghost">Headquarters</button>
+          <button class="btn-ghost">Branch</button>
+          <button class="btn-ghost">Support</button>
+        </div>
+        <div class="mt-6 grid grid-cols-1 gap-4">
+          <div class="card p-5">
+            <div class="font-semibold">Jakarta HQ</div>
+            <div class="text-sm text-muted mt-1">Jl. Jendral Sudirman No.10</div>
+          </div>
+          <div class="card p-5">
+            <div class="font-semibold">Bandung Branch</div>
+            <div class="text-sm text-muted mt-1">Jl. Asia Afrika No.22</div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-6 p-6">
+        <div class="aspect-w-16 aspect-h-9 bg-bg rounded-xl border border-border"></div>
+      </div>
+    </div>
+  </section>
+  <Footer />
+</BaseLayout>

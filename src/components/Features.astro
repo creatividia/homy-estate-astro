@@ -1,0 +1,15 @@
+---
+import content from '@data/content.json'
+const items: Array<{ title: string; description: string }> = content.features
+---
+<section class="container py-16">
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    {items.map((f) => (
+      <div class="card p-6">
+        <div class="h-10 w-10 rounded-xl bg-primary"></div>
+        <h3 class="mt-4 text-lg font-semibold">{f.title}</h3>
+        <p class="mt-2 text-sm text-muted">{f.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

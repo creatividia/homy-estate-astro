@@ -1,0 +1,17 @@
+:root {
+  --color-bg: 248 248 248;
+  --color-surface: 255 255 255;
+  --color-border: 229 229 229;
+  --color-primary: 16 185 129;
+  --color-text: 20 20 20;
+  --color-muted: 99 99 99;
+}
+
+.dark {
+  --color-bg: 20 20 20;
+  --color-surface: 26 26 26;
+  --color-border: 38 38 38;
+  --color-primary: 16 185 129;
+  --color-text: 245 245 245;
+  --color-muted: 160 160 160;
+}

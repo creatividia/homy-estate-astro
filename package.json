@@ -1,0 +1,27 @@
+{
+  "name": "homy-estate-astro",
+  "version": "0.1.0",
+  "author": {
+    "name": "creatividia.com",
+    "email": "creatividia@gmail.com"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.12.0",
+    "@astrojs/tailwind": "^5.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14",
+    "postcss": "^8.4.47",
+    "autoprefixer": "^10.4.20",
+    "@tailwindcss/typography": "^0.5.15",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/aspect-ratio": "^0.4.2"
+  }
+}
