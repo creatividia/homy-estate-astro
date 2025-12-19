@@ -1,2 +1,1 @@
-@import "/src/styles/theme.css";
-@import "/src/styles/global.css";
+/* This file is no longer needed. CSS is imported in BaseLayout.astro */

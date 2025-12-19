@@ -1,4 +1,6 @@
 ---
+import '@styles/theme.css'
+import '@styles/global.css'
 import Analytics from '@components/Analytics.astro'
 const { title = 'Homy Estate', description = 'Find your dream home' } = Astro.props
 ---
@@ -18,7 +20,6 @@ const { title = 'Homy Estate', description = 'Find your dream home' } = Astro.pr
       const t=s||(d?'dark':'light');
       if(t==='dark'){document.documentElement.classList.add('dark')}
     </script>
-    <link rel="stylesheet" href="/global.css" />
     <title>{title}</title>
   </head>
   <body class="bg-bg text-text antialiased">
