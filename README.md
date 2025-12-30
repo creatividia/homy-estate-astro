@@ -4,13 +4,11 @@ A modern, responsive real estate marketplace website built with [Astro](https://
 
 ## Project Overview
 
-Homy Estate is a property listing platform that connects buyers, renters, and investors with verified real estate listings and trusted local agents. The platform features an intuitive search experience, detailed property galleries, and agent profiles.
+Homy Estate is an Astro website template for property listing platform that connects buyers, renters, and investors with verified real estate listings and trusted local agents.
 
 ## Features
 
-- **Verified Listings** - Every property is vetted for accuracy and legitimacy
-- **Trusted Agents** - Work with experienced local professionals
-- **Smart Search** - Filter by price, property type, and neighborhood
+- **Home Page** - Hero section, featured properties, and key features
 - **Dynamic Property Pages** - Detailed listings with photo galleries and amenities
 - **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
 - **Dark Mode Support** - Automatic theme detection with manual toggle
@@ -28,7 +26,7 @@ Homy Estate is a property listing platform that connects buyers, renters, and in
 
 ```
 src/
-├── components/          # Reusable Astro components
+├── components/         # Reusable Astro components
 │   ├── Hero.astro      # Landing hero section
 │   ├── NavBar.astro    # Navigation bar
 │   ├── PropertyCard.astro  # Property listing card
@@ -191,7 +189,7 @@ For project modifications:
 
 ## License
 
-© 2024 Homy Estate. All rights reserved.
+© 2025 Homy Estate. All rights reserved.
 
 ## Author
 
